@@ -1,0 +1,75 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #eef1f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    width: 360px;
+    max-width: 90%;
+    margin: 20px 0;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-top: 12px;
+    color: #555;
+}
+
+/* Align checkboxes using flexbox */
+.checkbox-group, .radio-group {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Space between checkboxes or radio buttons */
+}
+
+input[type="checkbox"], input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #4CAF50; /* Custom color for checkbox/radio */
+    cursor: pointer;
+}
+
+/* Error Message Styling */
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Submit Button Styling */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 12px;
+    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #388E3C;
+    transform: scale(1.02);
+}
